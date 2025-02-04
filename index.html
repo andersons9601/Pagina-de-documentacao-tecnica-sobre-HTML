@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Página de documentação técnica sobre HTML</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>Documentação sobre HTML</header>
+        <ul>
+            <li><a class="nav-link" href="#Introducao">Introdução</a></li>
+            <li><a class="nav-link" href="#Estrutura_Basica_HTML">Estrutura Básica de um Documento HTML</a></li>
+            <li><a class="nav-link" href="#Tags_HTML_Comuns">Tags HTML Comuns</a></li>
+            <li><a class="nav-link" href="#Tags_Formatacao_Texto">Tags de Formatação de Texto</a></li>
+            <li><a class="nav-link" href="#Links_e_Navegacao">Links e Navegação</a></li>
+            <li><a class="nav-link" href="#Imagens">Imagens</a></li>
+            <li><a class="nav-link" href="#Listas">Listas</a></li>
+            <li><a class="nav-link" href="#Tabelas">Tabelas</a></li>
+            <li><a class="nav-link" href="#Formularios">Formulários</a></li>
+            <li><a class="nav-link" href="#Audio_e_Video">Áudio e Vídeo</a></li>
+            <li><a class="nav-link" href="#Semantica_em_HTML">Semântica em HTML</a></li>
+            <li><a class="nav-link" href="#Acessibilidade">Acessibilidade</a></li>
+            <li><a class="nav-link" href="#Ferramentas_de_Desenvolvimento">Ferramentas de Desenvolvimento</a></li>
+            <li><a class="nav-link" href="#Referencias">Referências</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+
+        <section class="main-section" id="Introducao">
+            <header>Introducão</header>
+            <article>
+                <p>
+                    HTML (Hypertext Markup Language) é a linguagem padrão usada para criar páginas web. Ela fornece a
+                    estrutura básica de sites, permitindo a organização de conteúdo como texto, imagens, links e outros
+                    elementos essenciais. HTML usa "tags" para marcar e definir diferentes partes do conteúdo, sendo
+                    fundamental para o desenvolvimento web.
+                </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="Estrutura_Basica_HTML">
+            <header>Estrutura Básica de um Documento HTML</header>
+            <article>
+                <p>Um documento HTML é composto por uma estrutura básica, que inclui as tags essenciais para definir uma
+                    página. Abaixo está a estrutura mínima:</p>
+                <code>&lt;!DOCTYPE html&gt;
+                        &lt;html lang="pt-br"&gt;
+                        &lt;head&gt;
+                        &lt;meta charset="UTF-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                        &lt;title>Título da Página &lt;/title&gt;
+                        &lt;/head&gt;
+                        &lt;body&gt;
+                        &lt;h1>Bem-vindo ao HTML!&lt;/h1&gt;
+                        &lt;p>Este é um exemplo de um documento HTML básico.&lt;/p&gt;
+                        &lt;/body&gt;
+                        &lt;/html&gt;</code>
+            </article>
+        </section>
+
+        <section class="main-section" id="Tags_HTML_Comuns">
+            <header>Tags HTML Comuns</header>
+            <article>
+                <ul>
+                    <li>&lt;html>: Define o início de um documento HTML.</li>
+                    <li>&lt;head>: Contém metadados sobre o documento (como título e codificação de caracteres).</li>
+                    <li>&lt;title>: Define o título da página que aparece na aba do navegador.</li>
+                    <li>&lt;body>: Contém o conteúdo visível da página, como textos e imagens.</li>
+                    <li>&lt;h1>,&lt;h2>,&lt;h3>, etc.: Tags para definir títulos, do mais importante (&lt;h1>) ao menos
+                        importante (&lt;h6>).</li>
+                    <li>&lt;p>: Define um parágrafo.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="Tags_Formatacao_Texto">
+            <header>Tags de Formatação de Texto</header>
+            <article>
+                HTML oferece várias tags para formatar texto:
+                <ul>
+                    <li>&lt;b>: Negrito</li>
+                    <li>&lt;i>: Itálico</li>
+                    <li>&lt;u>: Sublinhado</li>
+                    <li>&lt;em>: Ênfase (itálico semântico)</li>
+                    <li>&lt;strong>: Importância (negrito semântico)</li>
+                    <li>&lt;br>: Quebra de linha</li>
+                    <li>&lt;hr>: Linha horizontal</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="Links_e_Navegacao">
+            <header>Links e Navegação</header>
+            <article>
+                <p>
+                    Os links são essenciais para a navegação em páginas web. Eles são criados com a tag &lt;a>:
+                </p>
+                <code>&lt;a href="https://www.exemplo.com">Visite nosso site!&lt;/a></code>
+                <p>
+                    Atributos importantes:
+                </p>
+                <ul>
+                    <li>href: Define o endereço do link</li>
+                    <li>target="_blank": Abre o link em uma nova aba</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="Imagens">
+            <header>Imagens</header>
+            <article>
+                <p>
+                    As imagens são adicionadas com a tag &lt;img>. Atributos importantes incluem:
+                </p>
+                <ul>
+                    <li>src: Define o caminho da imagem.</li>
+                    <li>alt: Fornece uma descrição alternativa da imagem (para acessibilidade).</li>
+                </ul>
+                Exemplo:
+                <code>&lt;img src="imagem.jpg" alt="Descrição da Imagem"></code>
+            </article>
+        </section>
+
+        <section class="main-section" id="Listas">
+            <header>Listas</header>
+            <article>
+                <p>HTML suporta dois tipos principais de listas: ordenadas e não ordenadas.</p>
+
+                <p>Lista não ordenada:</p>
+                <code>&lt;ul>
+                        &lt;li>Item 1&lt;/li>
+                        &lt;li>Item 2&lt;/li>
+                      &lt;/ul>
+                </code>
+                <p>
+                    Lista Ordenada:
+                </p>
+                <code>&lt;ol>
+                        &lt;li>Primeiro&lt;/li>
+                        &lt;li>Segundo&lt;/li>
+                      &lt;/ol>
+                </code>
+            </article>
+        </section>
+
+        <section class="main-section" id="Tabelas">
+            <header>Tabelas</header>
+            <article>
+                <p>
+                    Tabelas em HTML são criadas com as tags &lt;table>, &lt;tr>, &lt;td>, e &lt;th>. Exemplo:
+                </p>
+                <code>&lt;table>
+                    &lt;tr>
+                    &lt;th>Nome&lt;/th>
+                    &lt;th>Idade&lt;/th>
+                    &lt;/tr>
+                    &lt;tr>
+                    &lt;td>João&lt;/td>
+                    &lt;td>25&lt;/td>
+                    &lt;/tr>
+                    &lt;/table>                  
+            </code>
+            </article>
+        </section>
+
+        <section class="main-section" id="Formularios">
+            <header>Formulários</header>
+            <article>
+                <p>
+                    Formulários permitem que os usuários enviem dados para um servidor. Eles são definidos pela tag
+                    &lt;form>:
+                </p>
+                <code>&lt;form action="/submit" method="POST">
+                    &lt;label for="nome">Nome:&lt;/label>
+                    &lt;input type="text" id="nome" name="nome">
+                    &lt;input type="submit" value="Enviar">
+                    &lt;/form>
+                  </code>
+            </article>
+        </section>
+
+        <section class="main-section" id="Audio_e_Video">
+            <header>Áudio e Vídeo</header>
+            <article>
+                <p>HTML5 oferece suporte para incorporar mídia diretamente na página.</p>
+                <p>Áudio:</p>
+                <code>&lt;audio controls>
+                    &lt;source src="audio.mp3" type="audio/mpeg">
+                        Seu navegador não suporta o elemento de áudio.
+                        &lt;/audio>
+                </code>
+                <p>Vídeo</p>
+                <code>&lt;video controls>
+                    &lt;source src="video.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                    &lt;/video>
+                  </code>
+            </article>
+        </section>
+
+        <section class="main-section" id="Semantica_em_HTML">
+            <header>Semântica em HTML</header>
+            <article>
+                <p>O HTML5 introduziu várias tags semânticas que ajudam na estruturação e na acessibilidade do conteúdo:
+                </p>
+                <ul>
+                    <li>&lt;header>: Define o cabeçalho da página</li>
+                    <li>&lt;footer>: Define o rodapé.</li>
+                    <li>&lt;article>: Representa um conteúdo independente.</li>
+                    <li>&lt;section>: Define uma seção dentro de um documento.</li>
+                    <li>&lt;nav>: Define um bloco de navegação.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="Acessibilidade">
+            <header>Acessibilidade</header>
+            <article>
+                <p>A acessibilidade web é essencial para garantir que todos, incluindo pessoas com deficiência, possam
+                    usar seu site. Algumas práticas incluem:</p>
+                <ul>
+                    <li>Usar a tag &lt;alt> para imagens.</li>
+                    <li>Fornecer uma navegação clara e lógica.</li>
+                    <li>Garantir que o conteúdo seja legível por leitores de tela.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="Ferramentas_de_Desenvolvimento">
+            <header>Ferramentas de Desenvolvimento</header>
+            <article>
+                <ul>
+                    <li>DevTools: Ferramentas de desenvolvedor no navegador ajudam a inspecionar e depurar o código
+                        HTML.</li>
+                    <li>Validador W3C: Ferramenta para validar o código HTML em busca de erros de sintaxe.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="Referencias">
+            <header>Referências</header>
+            <article>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">MDN Web Docs -
+                            HTML</a></li>
+                    <li><a href="https://www.w3.org/TR/html5/" target="_blank">W3C HTML5 Specification</a></li>
+                    <li><a href="https://validator.w3.org/" target="_blank">W3C HTML Validator</a></li>
+                </ul>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
