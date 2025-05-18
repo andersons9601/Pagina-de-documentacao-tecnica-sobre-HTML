@@ -1,0 +1,1 @@
+Projeto de uma documentação técnica que foi criado durante o curso de Design Responsivo do Freecodecamp.
